@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEditor;
 using UnityEngine;
 
@@ -17,7 +15,7 @@ public class WaypointManager : EditorWindow
   private void OnGUI()
   {
     SerializedObject obj = new SerializedObject(this);
-    EditorGUILayout.PropertyField(obj.FindProperty("waypointRoot"));
+    EditorGUILayout.PropertyField(obj.FindProperty("_waypointRoot"));
     if (_waypointRoot == null)
     {
       EditorGUILayout.HelpBox("Root transform must be selected. Please assign a root transform", MessageType.Warning);
@@ -55,7 +53,27 @@ public class WaypointManager : EditorWindow
       {
         RemoveWaypoint();
       }
+
+      if (GUILayout.Button("Add branch Waypoit"))
+      {
+        AddBranch();
+      }
     }
+    
+  }
+
+  private void AddBranch()
+  {
+    GameObject waypointObj = new GameObject("Waypoint" + _waypointRoot.childCount, typeof(WayPoint));
+    waypointObj.transform.SetParent(_waypointRoot,false);
+    WayPoint wayPoint = waypointObj.GetComponent<WayPoint>();
+    WayPoint branchesFrom = Selection.activeGameObject.GetComponent<WayPoint>();
+    branchesFrom.Branches.Add(wayPoint);
+
+    wayPoint.transform.position = branchesFrom.transform.position;
+    wayPoint.transform.forward = branchesFrom.transform.forward;
+
+    Selection.activeGameObject = wayPoint.gameObject;
     
   }
 
