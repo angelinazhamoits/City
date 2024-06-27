@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Waypoint\WayPoint.cs" />
      <Compile Include="Assets\Waypoint\WaypointManager.cs" />
+     <Compile Include="Assets\NavMeshMove.cs" />
      <Compile Include="Assets\SpawnPedestrian.cs" />
      <Compile Include="Assets\Waypoint\WaypointNavigator.cs" />
      <Folder Include="Assets" />
@@ -62,6 +63,7 @@
      <Folder Include="Assets\PolygonCity\FX" />
      <Folder Include="Assets\PolygonCity\Prefabs\Buildings" />
      <Folder Include="Assets\PolygonCity\Scenes" />
+     <Folder Include="Assets\PolygonCity\Scenes\Demo" />
      <Folder Include="Assets\PolygonCity\Prefabs\Props" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\PolygonCity\Models\Collisions\Materials" />
@@ -739,8 +741,14 @@
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation">
+     <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation.Updater">
+     <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
@@ -772,8 +780,14 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor">
+     <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+     <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>C:\Users\Main\Documents\GitHub\CityTown\City\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
