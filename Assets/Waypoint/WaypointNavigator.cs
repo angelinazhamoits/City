@@ -14,12 +14,11 @@ public class  WaypointNavigator : MonoBehaviour
     private void Awake()
     {
         _direction = Mathf.RoundToInt(Random.Range(0f, 1f));
-        _controller.GetComponent<CharacterNavigationController>();
     }
 
     private void Start()
     {
-        _controller.SetDestination(_currentWaypoint.GetPosition(), _currentWaypoint.name);
+        _controller.SetDestination(ref _currentWaypoint, _currentWaypoint.name);
         
     }
 
@@ -69,7 +68,7 @@ public class  WaypointNavigator : MonoBehaviour
             }
 
         }
-        _controller.SetDestination(_currentWaypoint.GetPosition(), _currentWaypoint.name);
+        _controller.SetDestination(ref _currentWaypoint, _currentWaypoint.name);
    
     }
 }

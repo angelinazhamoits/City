@@ -7,7 +7,9 @@ public class WayPoint : MonoBehaviour
 
    public WayPoint _previousWaypoint;
    public WayPoint _nextWaypoint;
-    public List<WayPoint> Branches; 
+    public List<WayPoint> Branches;
+    public TrafficLight trafficLight;
+    public bool haveTrafficLight;
     
     [Range(0f, 5f)] public float _width = 1f;
     [Range(0f, 1f)] public float _branchRatio = 0.5f;

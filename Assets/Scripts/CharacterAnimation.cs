@@ -16,7 +16,7 @@ public class CharacterAnimation : MonoBehaviour
 
    private void Update()
    {
-      if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+      if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.D))
       {
          _animator.SetBool("isMove", true);
       }
