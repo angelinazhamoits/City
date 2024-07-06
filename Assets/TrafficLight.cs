@@ -9,7 +9,7 @@ public class TrafficLight : MonoBehaviour
 
     [SerializeField] private GameObject _greenLight;
     [SerializeField] private GameObject _redLight;
-    public bool isGreen;
+    public bool _isGreen;
    
     private void Start()
     {
@@ -21,18 +21,16 @@ public class TrafficLight : MonoBehaviour
         StartCoroutine(LightChanger());
     }
 
-    IEnumerator LightChanger () 
-    {
+    IEnumerator LightChanger () {
         int counter = 10;
         while (counter > 0) {
             yield return new WaitForSeconds (1);
             counter--;
         }
 
-        isGreen = false;
-        _greenLight.SetActive(isGreen);
-        _redLight.SetActive(!isGreen);
-        Debug.Log($"isGreen: {isGreen}");
+        _isGreen = !_isGreen;
+        _greenLight.SetActive(_isGreen);
+        _redLight.SetActive(!_isGreen);
         StartChangeLight();
     }
 }

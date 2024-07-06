@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\CharacterAnimation.cs" />
      <Compile Include="Assets\NewScripts\PersonControllerNew.cs" />
      <Compile Include="Assets\Waypoint\WaypointEditor.cs" />
+     <Compile Include="Assets\NewScripts\CharacterInput.cs" />
      <Compile Include="Assets\Scripts\SpawnPedestrian.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\NewScripts\BulletController.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Waypoint\WaypointManager.cs" />
      <Compile Include="Assets\NewScripts\ObjectPool.cs" />
      <Compile Include="Assets\Waypoint\WaypointNavigator.cs" />
+     <Compile Include="Assets\NewScripts\AimCamera.cs" />
      <Compile Include="Assets\TrafficLight.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Waypoint" />

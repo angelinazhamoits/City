@@ -21,6 +21,7 @@ public class PersonControllerNew : MonoBehaviour
     private Vector2 _currentBlendAnimation;
     private Vector2 _animationVelocity;
     [SerializeField] private float _playerSpeed;
+    [SerializeField] private float _rotationSpeed = 2f;
     [SerializeField] private float _animationSmoothTime = 0.2f;
     
 public Vector2 MoveIput
@@ -45,6 +46,7 @@ public Vector2 MoveIput
     private void Update()
     {
         MovedCharacter();
+        RotateToDirection();
     }
 
     private void MovedCharacter()
@@ -58,6 +60,17 @@ public Vector2 MoveIput
         _characterController.Move(_move * Time.deltaTime * _playerSpeed);
     }
 
+    private void RotateToDirection()
+    {
+        if (_moveInput !=Vector3.zero)
+        {
+            Quaternion rotation = Quaternion.Euler(0f,_cameraTransform.eulerAngles.y, 0f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * _rotationSpeed);
+        }
+    }
+
+    
+    
     public void ShootGun()
     {
         GameObject bullet = ObjectPool.SharedInstance.GetPoolesObject();
