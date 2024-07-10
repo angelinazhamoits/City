@@ -53,7 +53,11 @@
                 {
                     "name": "Aim",
                     "type": "Button",
+<<<<<<< Updated upstream
                     "id": "92caf336-2f10-48ef-8708-4a890a8f24df",
+=======
+                    "id": "1924b32e-3edd-4baa-beea-37649a510618",
+>>>>>>> Stashed changes
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -162,7 +166,11 @@
                 },
                 {
                     "name": "",
+<<<<<<< Updated upstream
                     "id": "4ee9ff28-961c-4841-b71d-5fb1f873b048",
+=======
+                    "id": "7fc2d0c5-bb70-4d57-b7da-53815b823f01",
+>>>>>>> Stashed changes
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",

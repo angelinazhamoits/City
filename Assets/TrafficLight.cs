@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 public class TrafficLight : MonoBehaviour
 {
-
+ 
     [SerializeField] private GameObject _greenLight;
     [SerializeField] private GameObject _redLight;
     public bool _isGreen;
@@ -14,6 +14,7 @@ public class TrafficLight : MonoBehaviour
     private void Start()
     {
         StartChangeLight();
+        
     }
     
     private void StartChangeLight()
@@ -28,9 +29,15 @@ public class TrafficLight : MonoBehaviour
             counter--;
         }
 
+<<<<<<< Updated upstream
         _isGreen = !_isGreen;
         _greenLight.SetActive(_isGreen);
         _redLight.SetActive(!_isGreen);
+=======
+        isGreen = !isGreen;
+        _greenLight.SetActive(isGreen);
+        _redLight.SetActive(!isGreen);
+>>>>>>> Stashed changes
         StartChangeLight();
     }
 }

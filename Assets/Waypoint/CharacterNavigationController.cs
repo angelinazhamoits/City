@@ -56,7 +56,11 @@ public class CharacterNavigationController : MonoBehaviour
       _destination = wayPoint.GetPosition();
       _name = pointName;
       _isReachedDestination = false;
+<<<<<<< Updated upstream
 
+=======
+      
+>>>>>>> Stashed changes
    }
 
    private void CheckTrafficLightValue()
