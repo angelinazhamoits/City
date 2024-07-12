@@ -40,15 +40,3 @@ The following packages were updated:
   com.unity.collab-proxy from version 1.13.5 to 2.0.5
   com.unity.timeline from version 1.6.2 to 1.7.5
   com.unity.visualscripting from version 1.7.6 to 1.8.0
-
-=== Fri Jul  5 00:19:17 2024
-
-Packages were changed.
-Update Mode: updateDependencies
-
-The following packages were updated:
-  com.unity.cinemachine from version 2.9.7 to 2.10.0
-  com.unity.collab-proxy from version 2.3.1 to 2.4.3
-  com.unity.inputsystem from version 1.6.3 to 1.7.0
-  com.unity.timeline from version 1.7.5 to 1.7.6
-  com.unity.visualscripting from version 1.8.0 to 1.9.4
