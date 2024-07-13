@@ -11,7 +11,7 @@ public class BulletController : MonoBehaviour
     
     public Vector3 Target { get; set; }
     public bool Hit { get; set; }
-
+    
     private void OnEnable()
     {
         StartCoroutine(DeactivateBooletAfterDelay(gameObject));
